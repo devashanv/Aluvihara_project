@@ -44,7 +44,7 @@ const Footer: React.FC = () => {
             <section className="w-1/2 text-white flex flex-col gap-2">
               <h2 className="text-ternary teext-sm lg:text-base">Contact</h2>
               <p className="flex flex-col text-sm lg:text-base">
-                <span>+94 66 222 5233</span>
+                <span>+94 66 222 2533</span>
                 <span>+94 77 489 6697</span>
               </p>
             </section>
