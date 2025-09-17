@@ -70,7 +70,7 @@ const App: React.FC = () => {
         <img
           src="/gallery/cavenew.png"
           alt="Temple line art"
-          className="absolute top-905 -right-0 hidden lg:block w-lg object-fill pointer-events-none"
+          className="absolute top-915 -right-0 hidden lg:block w-sm object-fill pointer-events-none"
         />
 
         {/* <img 
