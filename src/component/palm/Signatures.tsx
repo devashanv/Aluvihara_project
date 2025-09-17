@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { BsChatQuote } from "react-icons/bs";
-import image1 from '../../assets/images/visitor1.png'
-import image2 from '../../assets/images/visitor2.png'
+import image1 from "../../assets/images/visitor1.png";
+import image2 from "../../assets/images/visitor2.png";
 
 type Signature = {
   image: string;
@@ -12,19 +12,19 @@ type Signature = {
 const signatures: Signature[] = [
   {
     image: image1,
-    text: `Our visit to the Aluvihara was truly unforgettable. Watching the artisans inscribe our names onto the Palm Leaves was mesmerizing. We now have a beautiful, personalized keepsake that connects us to Sri Lankan culture.`,
-    author: "Peter Johnson",
+    text: `Thank You Venerable Saranankara. Truly appreciate your effort for keeping up this ancient tradition that we have benefited from the easily teaching of the Buddha. Sādhu.`,
+    author: "Venerable Sumangala Bhikkhuni",
   },
   {
     image: image2,
     text: `The palm leaf inscription experience was a highlight of our trip. Seeing our special message come to life on the palm leaves was magical. It's a unique and meaningful souvenir that we'll treasure forever.`,
-    author: "Emma Watson",
+    author: "A Foreign Visitor",
   },
-  {
-    image: image1,
-    text: `The palm leaf inscription experience was a highlight of our trip. Seeing our special message come to life on the palm leaves was magical. It's a unique and meaningful souvenir that we'll treasure forever.`,
-    author: "Emma Watson",
-  },
+  // {
+  //   image: image1,
+  //   text: `The palm leaf inscription experience was a highlight of our trip. Seeing our special message come to life on the palm leaves was magical. It's a unique and meaningful souvenir that we'll treasure forever.`,
+  //   author: "Emma Watson",
+  // },
 ];
 
 const Signatures: React.FC = () => {
@@ -74,20 +74,20 @@ const Signatures: React.FC = () => {
             {currentPair.map((s, i) => (
               <div
                 key={i}
-                className="relative w-[280px] h-[460px] rounded-[40px] overflow-hidden "
+                className="relative w-[280px] h-[460px] overflow-hidden "
               >
                 {s ? (
                   <>
-                    <div>
+                    <div className="">
                       <img
                         src={s.image}
                         alt={s.author}
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-cover rounded-[40px]"
                       />
                     </div>
                     <div className="flex items-center justify-center">
                       <div className="absolute top-45 z-90 left-5 w-7/8 h-auto right-0 bg-black/80 text-white p-5 rounded-[40px]">
-                        <p className="text-sm mb-4">{s.text}</p>
+                        <p className="text-sm mb-4 text-justify">{s.text}</p>
                         <hr className="border-gray-400 my-2 w-2/3 mx-auto" />
                         <p className="text-center text-sm font-semibold">
                           {s.author}

@@ -129,7 +129,7 @@ const ContactPage: React.FC = () => {
                   <FiPhone className="icon" />
                 </div>
                 <h3>CONTACT US</h3>
-                <p>Mobile: +94 66 222 5233</p>
+                <p>Mobile: +94 66 222 2533</p>
                 <p>Mobile: +94 77 489 6697</p>
                 <hr />
               </div>
