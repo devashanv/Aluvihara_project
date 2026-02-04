@@ -5,6 +5,7 @@ import Process from "../component/palm/Process";
 import NavBar1 from "../component/common/NavBar1";
 import Footer from "../component/common/Footer";
 import { useEffect } from "react";
+import FooterBottomLogo from '../assets/logos/footer-logo-white.png'
 
 const PalmLeaves: React.FC = () => {
   //top mount
@@ -36,7 +37,15 @@ const PalmLeaves: React.FC = () => {
         </footer>
         {/* copyrights */}
         <div className="bg-[#1E1E1E] text-center py-3 text-[8px] md:text-xs text-ternary">
-          <p>All rights reserved | Powered by All In One IT Solutions</p>
+          <a
+            href="https://www.allinoneholdings.com/"
+            className="hover:cursor-pointer hover:text-white flex justify-center items-center"
+          >
+            <p className="flex items-center justify-center">
+              © 2025 Aluvihara Temple All rights reserved | Developed by
+              <img src={FooterBottomLogo} alt="" className="w-8 lg:w-15 ml-1 mt-0 lg:-mt-1" />
+            </p>
+          </a>
         </div>
       </div>
     </>

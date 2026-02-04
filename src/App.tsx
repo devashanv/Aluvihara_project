@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import "./App.css";
 
 import NavBar1 from "./component/common/NavBar1";
@@ -11,9 +11,10 @@ import HomeHero from "./component/about/HomeHero";
 import HistorySection from "./component/about/HistorySection";
 import Message from "./component/about/Message";
 
-import MapURL from "./assets/images/location-map.png";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
+import FooterBottomLogo from './assets/logos/footer-logo-white.png'
 
 const App: React.FC = () => {
   //top mount
@@ -100,7 +101,15 @@ const App: React.FC = () => {
         </footer>
         {/* copyrights */}
         <div className="bg-[#1E1E1E] text-center py-3 text-[8px] md:text-xs text-ternary">
-          <p>All rights reserved | Powered by All In One Holdings</p>
+          <a
+            href="https://www.allinoneholdings.com/"
+            className="hover:cursor-pointer hover:text-white flex justify-center items-center"
+          >
+            <p className="flex items-center justify-center">
+              © 2025 Aluvihara Temple All rights reserved | Developed by
+              <img src={FooterBottomLogo} alt="" className="w-8 lg:w-15 ml-1 mt-0 lg:-mt-1" />
+            </p>
+          </a>
         </div>
       </div>
     </>
